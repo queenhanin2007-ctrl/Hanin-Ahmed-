@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Hanin & Ahmed | Connection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&display=swap');
+        body { font-family: 'Tajawal', sans-serif; background: #f8fafc; color: #334155; transition: all 0.3s; }
+        .dark-mode { background: #0f172a; color: #e2e8f0; }
+        .box { background: rgba(255, 255, 255, 0.9); border: 1px solid #e2e8f0; padding: 25px; border-radius: 20px; margin-bottom: 20px; }
+        .dark-mode .box { background: rgba(30, 41, 59, 0.8); border: 1px solid #334155; }
+        .text-content { line-height: 2.2; text-align: justify; }
+        .hidden-gate { display: none; }
+    </style>
+</head>
+<body class="p-6">
+
+    <!-- شاشة الباسورد -->
+    <div id="gate" class="max-w-md mx-auto mt-20 box text-center">
+        <h2 class="text-xl font-bold mb-4">أدخل كلمة المرور</h2>
+        <input type="password" id="passInput" class="w-full bg-slate-100 p-3 rounded-lg mb-4 text-center">
+        <button onclick="checkPass()" class="w-full bg-indigo-500 text-white p-3 rounded-lg font-bold">دخول</button>
+    </div>
+
+    <!-- المحتوى -->
+    <div id="mainContent" class="hidden-gate max-w-2xl mx-auto text-center">
+        <button onclick="document.body.classList.toggle('dark-mode')" class="mb-4 text-sm underline opacity-50">تغيير لون الموقع</button>
+        <h1 class="text-5xl font-bold mb-2">أحمد 🫂</h1>
+        <p class="mb-6">سكن قلبي، وأحمد الله على وجودك في حياتي ❤️</p>
+
+        <div id="msgBox" class="box text-lg md:text-xl font-bold min-h-[100px] flex items-center justify-center p-6"></div>
+
+        <!-- خانة رسائل من القلب -->
+        <div class="box">
+            <h1 class="text-2xl font-bold mb-4 text-indigo-700">رسايل من القلب</h1>
+            <p class="text-content leading-loose">ليست كل الخلافات معناها النهاية. أنا لا أريد أن أكون مع غيرك، ولا أريدك أن تكون مع غيري. لنصلح ما بيننا بالحب. 🫂♥️</p>
+        </div>
+
+       <!-- خانة حاجة مش عارفة أصارحك بيها -->
+        <div class="box">
+            <h1 class="text-2xl font-bold mb-4 text-indigo-700">حاجه مش عارفه اصارحك بيها</h1>
+            <p class="text-content leading-loose"> أنا بس   كنت خايفه أتوجع منك أو تسيبنى علشان كدا كنت بنسحب بدل ما أتوجع عمري ما حبيت حد قدك ولا حسيت بالأمان مع حد غيرك من بعد بابا🫶🏻 و المره دى أنا مش عايزه أسيبك.  أنا بحبك وعايزاك لأني بحس معاك بأمان وأنا بحبك دي أقل من اللي ممكن يتوصف لأني شيلالك حب أكتر بكتير من كلمه بحبك 
+أنا معترفه أني غلطانه وبعتذرلك لأنك تهمني وأنا باقيه عليك وشارياك يا حـبـوبـي 
+عمر ما حد فيأخد مكانك ولا يأخدك مني ..أنت رجلي وحبيبي و بإذن اللَّه تعالي هتكون جوزي ... اه إحنا بنختلف كثير وده بديهي و على رائي كلامك هو لأزم أول حب بين طرفين ينتهى بوداع؟
+ في الأجابه لأ طبعاً  ينتهي بجواز وحب أكتر ...خلينا نتعاتب كتير.. لأن طول ما إحنا بـ نتعاتب يبقي لسه باقيين على بعض طول ما أنا لسه بزعل منك وأنت كمان يبقي لسه بنحب بعض . وارد جداً نختلف ونتخانق ..بس تكمل النهاية في التصالح ورجوعنا لـ بعضنا لأن ملناش غير بـعـ🫂 ـض ♥️
+بحبك ♥️</p>
+        </div>
+
+      <!-- الخانة الأولى المخفية -->
+        <div class="box">
+            <button onclick="document.getElementById('hidden1').classList.toggle('hidden')" class="text-indigo-600 font-bold underline">❤️‍🩹 أتمني تتفاهمني</button>
+            <p id="hidden1" class="hidden mt-4 text-content leading-loose">وأنا مش بجبرك تتغير أنا متقبلاك بكل ما فيك حتى عيوبك ولكني عايزاك تكون أحسن السجاير و الڤيب هيتعبوك وأنا بحبك وبخاف عليك لأنك تهمني ولأنك حبيبي ولما بقولك قولي أنت فين وكدا من غير ما أسأل علشان أعرف أنت أمتى تكون فاضي وأكلمك وعلى فكره أنا عمرى ما كنت بحب أكلم حد في التلفون أو فويسات بس معاك بحبه لأني بحب أسمعك ولو مطمنتنيش بيعرف أحوالك من نبره صوتك وبحبك وبحب كلامك  ليا.. حتى لو بدلل عليك لأ ارادي مني  و مش بأخد بالي من كدا</p>
+        </div>
+
+       <!-- الخانة الثانية المخفية (الجديدة) -->
+        <div class="box">
+            <button onclick="document.getElementById('hidden2').classList.toggle('hidden')" class="text-indigo-600 font-bold underline">❤️‍🩹 حاجات بتفرق معايا اووي </button>
+            <p id="hidden2" class="hidden mt-4 text-content leading-loose"> انا كل اللي عايزه منك شويه احساس اني مهمه عندك و انك بتشاركني و جانبي مش طول الوقت انا اخر اهتماماتك  لاني بلاحظ دايما اني مش موجوده في مخططاتك المستقبليه و بكسف اقولك لان دي المفروض حاجه منك ليا مش العكس وانا ست و بنت بطبعي محتاجه اهتمام ....مطلبتش تسيب شغلك و تهتم بيا طول الوقت انما طالبه منك بس حب و اهتمام و احتواء شويه كلام حلوين احس انك معايا مش طول الوقت انا اللي اروحلك علشان زعلانه انا  عايزاك انت اللي تضمني ليك و تطبطب عليا و بالكلام لحد ما اكون حلالك و بالفعل ....اول مره تحب دور علشاني حسسني انك بتسعالي  و عايزني مش لاقي اعمل اللي طلباه منك صعب و جديد عليك واحده واحده   علشاني حتي👀 ...انا عماله اديلك في فرص وباقيه عليك و عارفه ان التغير صعب  بس عندي امل تتغير علشان و هنا التغير انك تشاركني \تحتويني \تكون جانبي في وجعي \ في ضعفي \ ليه ممكن صتحبتي تادي دورك طلامه انت موجود ؟...انت تعرف اني لو مكلمتكش  علشان شغلك و غبت شويه بلاقي في حاجات كتيره معرفهاش عنك و المفروض انا حبيبتك !!!!....طب انت متخيل ان صاحبك عمر او العميل بتاعك بيعرف عني حاجات كتيره عني و بيكلمك اكتر مني ؟...طب تعرف شعوري  بيبقي ازي لما الاقي عندك وقت فراغ بس فضلت حاجه علي انك تكلمني ؟..فكر كدا لو انت مكاني      و ياريت بجد بجد تبدا تخصصلي حتي ساعه نص الصبح و نص بليل و تبعتلي تشاركني لاني بعد كدا هعتبرها  انك مبقياش عايزني لان بجد بجد اللي بطلبه منك مش كتير ولا مكلف ولا ملهوش وقت دي حاجات بديهيه و قليله ..اما جو الهدايا و كدا ف ده المفروض انت اللي تعرفه و تعمله مش يتقال مني ليك و انا طالبه بس شويه اهتمام في التلفون و يومك مش هدايا و افعال  + حاجه كمان انا مش هقولك نتقابل تاني مع اني عمري ما حبيت  الخروج مع حد لمجرد بس اني بحبك ف ببني معاك ذكريات  كتير لاني بحبك بس انت مش عايز فخلاص انا بقيت محترمه رغبتك هو اه بزعل لاني مش باجي علي بالك  تقابلني ولا تفاجئني ولا غيره ❤️‍🩹❤️‍🩹              </p>
+        </div>
+    </div>
+
+    <script>
+        function checkPass() {
+            if(document.getElementById('passInput').value === "2026") {
+                document.getElementById('gate').style.display = 'none';
+                document.getElementById('mainContent').style.display = 'block';
+                startTyping();
+            }
+        }
+
+        const msgs = [
+            "أنا عملت الموقع ده علشان الكلام ساعات بيخونا..💔",
+            "إحنا زعلنا من بعض وقولنا كلام جارح.. 💔❤️‍🩹",
+            "بس إحنا لبعض مهما حصل.. 🫂♥️",
+            "أنت ليا لوحدي وأنا ليك لوحدك.. 🫂♥️",
+            "ليست كل الخلافات معناها النهاية.. أنا لا أريد أن أكون مع غيرك، ولا أريدك أن تكون مع غيري."
+        ];
+
+        async function startTyping() {
+            const el = document.getElementById('msgBox');
+            let i = 0;
+            while(true) {
+                let current = msgs[i % msgs.length];
+                el.innerText = "";
+                for(let char of current) { el.innerText += char; await new Promise(r => setTimeout(r, 50)); }
+                await new Promise(r => setTimeout(r, 2000));
+                i++;
+            }
+        }
+    </script>
+</body>
+</html>
